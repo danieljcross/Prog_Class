@@ -6,10 +6,11 @@ class Program
 {
     static void Main(string[] args)
     {
+        
         // Welcome and declare variables
         Console.WriteLine("Welcome to Guess my Number!");
         Random random = new Random();
-        int magicNumber = random.Next(0, 11);
+        int magicNumber = random.Next(1, 11);
         int guess = 0;
         int guess_count = 0;
         string again = "y";
@@ -25,10 +26,10 @@ class Program
 
                 // Find if it's higher or lower
                 if (guess > magicNumber){
-                    Console.WriteLine("The number is lower.");
+                    Console.WriteLine("Lower");
                 }
                 else if (guess < magicNumber){
-                    Console.WriteLine("The number is higher.");
+                    Console.WriteLine("Higher");
                 }
             };
 
