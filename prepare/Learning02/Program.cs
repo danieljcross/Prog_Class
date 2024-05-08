@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Learning02 World!");
+        Person fred = new Person("Fred", "Flintstone");
+        Person steve = new Person("Steve", "Rogers");
+
+        fred.EasternStyleName();
+        steve.WesternStyleName();
     }
 }
