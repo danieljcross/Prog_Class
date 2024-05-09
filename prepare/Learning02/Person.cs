@@ -1,5 +1,6 @@
 using System;
 
+// Define class
 class Person{
 
     // Define attributes
