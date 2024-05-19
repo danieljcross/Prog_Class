@@ -40,6 +40,15 @@ public class Journal
         File.WriteAllText(@$"C:\Users\User\OneDrive\Desktop\Prog_Class\Prog_Class\prove\Develop02\{docName}", GetJournalEntries());
     }
 
+    public void LoadJournalEntries(){
+        Console.WriteLine("Which journal would you like to view?");
+        string toLoad = Console.ReadLine();
+        string[] lines = File.ReadAllLines(@$"C:\Users\User\OneDrive\Desktop\Prog_Class\Prog_Class\prove\Develop02\{toLoad}");
+        foreach (string line in lines){
+            Console.WriteLine(line);
+        }
+    }
+
     // Constructor
     public Journal()
     {

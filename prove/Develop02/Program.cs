@@ -7,7 +7,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to the Journal Program!");
+        Console.WriteLine("Welcome to the Journal Program!\n");
         Journal journal = new Journal();
         List<string> menu = ["Write", "Display", "Load", "Save", "Quit"];
         int choice = 0;
@@ -30,7 +30,7 @@ class Program
             }
             else if (choice == 3)
             {
-                Console.WriteLine("Load");
+                journal.LoadJournalEntries();
             }
             else if (choice == 4)
             {
@@ -38,7 +38,7 @@ class Program
             }
             else
             {
-                Console.WriteLine("Quit");
+                Console.WriteLine("\nQuitting...\nProgram Ended");
             }
         }
     }
