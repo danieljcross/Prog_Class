@@ -32,7 +32,6 @@ class Program
             else if (scripture == "2"){
                 scripture2.Study();
             }
-
         }
     }
 }
