@@ -3,8 +3,14 @@ public class Breathing : Mindfulness{
     
 
     // Methods
-
+    public void doBreathing(){
+        Mindfulness mindfulness = new();
+        mindfulness.LoadSymbol();
+    }
 
     // Constructors
+    public Breathing(): base(){
+
+    }
 
 }

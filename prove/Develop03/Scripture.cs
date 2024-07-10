@@ -26,7 +26,7 @@ public class Scripture{
     
 
     // Properties
-    public List<string> verses = new List<string>();
+    private List<string> verses = new List<string>();
     private int num;
     private string book;
     private int chapter;

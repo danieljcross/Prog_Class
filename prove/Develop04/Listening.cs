@@ -6,5 +6,7 @@ public class Listening : Mindfulness{
 
 
     // Constructors
-
+    public Listening(){
+        
+    }
 }

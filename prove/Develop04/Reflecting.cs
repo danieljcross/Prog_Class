@@ -6,5 +6,7 @@ public class Reflecting : Mindfulness{
 
 
     // Constructors
-
+    public Reflecting(){
+        
+    }
 }

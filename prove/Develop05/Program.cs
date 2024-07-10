@@ -6,7 +6,7 @@ class Program
     {
         // Declare variables
         int points  = 0;
-        int choice = 9;
+        int choice = 0;
 
         // Menu
         while (choice != 6){

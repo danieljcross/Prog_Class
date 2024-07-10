@@ -1,8 +1,6 @@
-using System.Security.Cryptography.X509Certificates;
-
 public class Mindfulness{
     // Properties
-    int time;
+    private int time;
 
     // Methods
     public void DisplayProgramIntro(string choice){
@@ -18,30 +16,18 @@ public class Mindfulness{
         }
         Console.WriteLine("How long, in seconds, would you like for your session? ");
         time = int.Parse(Console.ReadLine());
+        Console.Clear();
     }
     public void LoadSymbol(){
-        int TIME = 600;
-        List<string> hands = ["-", "\\", "|", "/", "-"];
-        for (int x=0;x<2;x++){
+        int TIME = 5000;
+        List<string> hands = ["-", "\\", "|", "/"];
+        for (int x=0;x<3;x++){
             foreach (string hand in hands){
                 Console.Write(hand);
-                Thread.Sleep(TIME/8);
-                Console.Write("\b \b ");
+                Thread.Sleep(TIME/5);
+                Console.Write("\b \b");
             }
         }
-        Console.Write("-");
-        Thread.Sleep(TIME/8);
-        Console.Write("\b \b");
-        Console.Write("\\");
-        Thread.Sleep(TIME/8);
-        Console.Write("\b \b");
-        Console.Write("|");
-        Thread.Sleep(TIME/8);
-        Console.Write("\b \b");
-        Console.Write("/");
-        Thread.Sleep(TIME/8);
-        Console.Write("\b \b");
-        Console.Write("-");
     }
 
     // Constructor

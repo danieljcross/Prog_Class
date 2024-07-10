@@ -1,19 +1,21 @@
 class Setup{
     // Properties
-    bool run = true;
-    int choice;
-    string choiceString;
+    private bool run = true;
+    private int choice;
+    private string choiceString;
 
     // Methods
     public void DisplayMenu(){
         Console.Clear();
         while (run == true){
+            Console.Clear();
             Console.WriteLine("Menu Options:\n1. Start breathing activity\n2. Start reflection activity\n3. Start listening activity\n4. Quit\nSelect a choice from the menu: ");
             choice = int.Parse(Console.ReadLine());
             if (choice == 1){
                 choiceString = "Breathing";
                 Breathing breathing = new();
                 breathing.DisplayProgramIntro(choiceString);
+                breathing.doBreathing();
             }
             else if (choice == 2){
                 choiceString = "Reflection";
@@ -29,7 +31,9 @@ class Setup{
                 run = false;
             }
             else{
-                run = false;
+                Console.Clear();
+                Console.WriteLine("Please select a number 1-4.");
+                Thread.Sleep(3000);
             }
         }
     }
