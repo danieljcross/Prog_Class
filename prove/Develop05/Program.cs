@@ -7,14 +7,17 @@ class Program
         // Declare variables
         int points  = 0;
         int choice = 0;
+        string[] menuOptions = new string[] { "Create New Goal", "List Goals", "Save Goals", "Load Goals", "Record Event", "Quit" };
+
 
         // Menu
         while (choice != 6){
             Console.Clear();
             Console.WriteLine($"You have {points} points.");
             Menu menu = new();
-            menu.PrintMenu();
+            menu.PrintMenu(menuOptions);
             bool validInput = false;
+            string[] asdfg = new string[] {"",""};
             
             // Call the right class
             while (!validInput){
@@ -25,7 +28,7 @@ class Program
                 }
                 catch (FormatException){
                     Console.Clear();
-                    menu.PrintMenu();
+                    menu.PrintMenu(asdfg);
                 }
             }
             if (choice == 1){
