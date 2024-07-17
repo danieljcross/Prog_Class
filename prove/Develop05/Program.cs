@@ -15,7 +15,7 @@ class Program
             Console.Clear();
             Console.WriteLine($"You have {points} points.");
             Menu menu = new();
-            menu.PrintMenu(menuOptions);
+            menu.PrintMenu();
             bool validInput = false;
             string[] asdfg = new string[] {"",""};
             
@@ -28,7 +28,7 @@ class Program
                 }
                 catch (FormatException){
                     Console.Clear();
-                    menu.PrintMenu(asdfg);
+                    menu.PrintMenu();
                 }
             }
             if (choice == 1){

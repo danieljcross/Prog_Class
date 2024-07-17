@@ -2,19 +2,15 @@ using System.Diagnostics.CodeAnalysis;
 
 public class Menu{
     // Constructor
-    public Menu(string menu){
-        this.menu = menu;
+    public Menu(){
     }
 
     // Attributes
-    // private string menu = "Menu Options:\n1. Create New Goal\n2. List Goals\n3. Save Goals\n4. Load Goals\n5. Record Event\n6. Quit"; 
-    private string menu;
+    private string menu = "Menu Options:\n1. Create New Goal\n2. List Goals\n3. Save Goals\n4. Load Goals\n5. Record Event\n6. Quit"; 
 
     // Methods
     public void PrintMenu(){
-        foreach (string item in menuOptions){
-            Console.WriteLine(item);
-        }
+            Console.WriteLine(menu);
     }
 
     public (int, string) PrintGoalTypes(){
