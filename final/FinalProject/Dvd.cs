@@ -1,14 +1,14 @@
-using System.Runtime.CompilerServices;
-
 public class Dvd: Item{
     // Constructor
     public Dvd(string title, int daysAllowed, int daysPassed) : base(title, daysAllowed, daysPassed){
     }
 
+
     // Properties
     private string type = "DVD";
     protected override double penalty => 1;
     protected override double cap => 30;
+
 
     // Methods
     public override void LatePenalty(){
