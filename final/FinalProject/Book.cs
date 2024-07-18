@@ -3,6 +3,7 @@ public class Book : Item{
     public Book(string title, int daysAllowed, int daysPassed) : base(title, daysAllowed, daysPassed){
         
     }
+    public Book() : base(){}
 
 
     // Properties
@@ -18,7 +19,7 @@ public class Book : Item{
             Console.WriteLine($"Your {type} \"{title}\" is {overdue} days overdue.\nYour fine total for this {type.ToLower()} is now ${Math.Min(Math.Round(overdue * 0.5, 2), 60).ToString("F2")}");
         }
         else{
-            Console.WriteLine($"You have {overdue} days left before it becomes past due.");
+            Console.WriteLine($"You have {overdue*-1} days left before your {type.ToLower()} \"{title}\" becomes past due.");
         }
         Console.WriteLine();
     }

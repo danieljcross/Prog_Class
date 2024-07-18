@@ -5,14 +5,14 @@ public abstract class Item{
         this.daysAllowed = daysAllowed;
         this.daysPassed = daysPassed;
     }
+    public Item(){}
 
 
     // Attributes
     protected string title { get; private set; }
     protected int daysAllowed { get; private set; }
     protected int daysPassed { get; private set; }
-    protected int overdue{ get { return daysPassed - daysAllowed; }
-    }
+    protected int overdue{ get { return daysPassed - daysAllowed; } }
     protected abstract double penalty { get; }
     protected abstract double cap { get;}
 
