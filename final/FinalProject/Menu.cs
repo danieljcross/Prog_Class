@@ -12,7 +12,7 @@ public class Menu{
 
 
     // Methods
-    public void BeginMenu(){
+    public void RunMenu(){
 
         int selection = 0;
         while (selection != 3){
