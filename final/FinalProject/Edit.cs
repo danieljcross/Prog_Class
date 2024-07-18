@@ -5,9 +5,6 @@ public class Edit{
     }
 
 
-    // Attributes
-
-
     // Methods
     public void ViewItems(List<Item> itemList){
         Console.Clear();
@@ -20,6 +17,7 @@ public class Edit{
             Console.WriteLine("Press Enter to continue.\n");
             Console.ReadLine();
     }
+
     public Item NewItem(){
         int type = 1;
         string title;

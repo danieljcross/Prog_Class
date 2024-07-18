@@ -3,7 +3,9 @@ public class Book : Item{
     public Book(string title, int daysAllowed, int daysPassed) : base(title, daysAllowed, daysPassed){
         
     }
-    public Book() : base(){}
+    public Book() : base(){
+        
+    }
 
 
     // Properties

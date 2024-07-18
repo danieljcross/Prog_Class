@@ -3,7 +3,9 @@ public class Magazine : Item{
     public Magazine(string title, int daysAllowed, int daysPassed) : base(title, daysAllowed, daysPassed){
         
     }
-    public Magazine() : base(){}
+    public Magazine() : base(){
+        
+    }
 
 
     // Properties

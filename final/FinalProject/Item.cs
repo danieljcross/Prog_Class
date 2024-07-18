@@ -5,7 +5,9 @@ public abstract class Item{
         this.daysAllowed = daysAllowed;
         this.daysPassed = daysPassed;
     }
-    public Item(){}
+    public Item(){
+        
+    }
 
 
     // Attributes
